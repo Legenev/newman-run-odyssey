@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Истории — Newman Run Odyssey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&display=swap">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .stories-page { padding: 120px 0 6rem; }
+    .stories-page .section-label { display: block; padding: 0 clamp(1.5rem,5vw,4rem); margin-bottom: 3rem; }
+    .stories-featured { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .stories-featured-text { padding: clamp(2rem,4vw,3.5rem) clamp(1.5rem,5vw,4rem); display: flex; flex-direction: column; justify-content: flex-end; }
+    .stories-featured-text .article-date { font-family: var(--font-body); font-size: 0.7rem; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); margin-bottom: 1rem; }
+    .stories-featured-text h2 { font-family: var(--font-display); font-size: clamp(1.6rem,3.5vw,2.8rem); font-weight: 800; color: #fff; line-height: 1.1; }
+    .stories-featured-text h2 a { color: inherit; text-decoration: none; }
+    .stories-featured-text h2 a:hover { color: var(--color-accent); }
+    .stories-featured-image { aspect-ratio: 4/3; overflow: hidden; }
+    .stories-featured-image img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter 0.4s; }
+    .stories-featured-image:hover img { filter: grayscale(0%); }
+    .stories-archive { padding: clamp(3rem,5vw,5rem) clamp(1.5rem,5vw,4rem); }
+    .stories-archive-title { font-family: var(--font-body); font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 2rem; }
+    .stories-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+    .story-card { background: var(--color-surface,#111); }
+    .story-card-link { display: block; text-decoration: none; padding: 1.8rem 1.6rem; border: 1px solid transparent; transition: border-color 0.2s; }
+    .story-card-link:hover { border-color: var(--color-accent); }
+    .story-card-rubric { font-family: var(--font-body); font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.8rem; }
+    .story-card-title { font-family: var(--font-display); font-size: clamp(1rem,1.8vw,1.25rem); font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 0.8rem; }
+    .story-card-meta { font-family: var(--font-body); font-size: 0.65rem; color: rgba(255,255,255,0.3); }
+    .stories-load-more { text-align: center; padding: 3rem; }
+    .load-more-btn { font-family: var(--font-body); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.8rem 2rem; border: 1px solid rgba(255,255,255,0.25); background: transparent; color: #fff; cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+    .load-more-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    @media(max-width:768px) {
+      .stories-featured { grid-template-columns: 1fr; }
+      .stories-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="Newman Run Odyssey">
+        <img src="../logo-header.svg" alt="Newman Run Odyssey" class="logo-svg-header">
+      </a>
+      <nav class="site-nav">
+        <a href="../playlists/">PLAYLISTS</a>
+        <a href="../stories/" class="active">ИСТОРИИ</a>
+        <a href="../motivation/">МОТИВАЦИЯ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="stories-page">
+    <span class="section-label" style="color:var(--color-accent)">ИСТОРИИ</span>
+
+    <!-- Featured -->
+    <div class="stories-featured">
+      <div class="stories-featured-text">
+        <span class="article-date">16.06.26</span>
+        <h2><a href="tokyo-night-race.html">→ Tokyo Night Race: 42 км при нулях и сплошном дожде</a></h2>
+      </div>
+      <div class="stories-featured-image">
+        <img src="https://www.shutterstock.com/image-photo/night-marathon-runners-crowd-rain-600nw-2698471163.jpg" alt="Tokyo Night Race" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Archive -->
+    <div class="stories-archive">
+      <div class="stories-archive-title">Все материалы</div>
+      <div class="stories-grid">
+
+        <article class="story-card">
+          <a href="tokyo-night-race.html" class="story-card-link">
+            <div class="story-card-rubric">РЕПОРТАЖ</div>
+            <h3 class="story-card-title">Tokyo Night Race: 42 км при нулях и сплошном дожде</h3>
+            <div class="story-card-meta">16.06.26 · Дневник</div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="#" class="story-card-link">
+            <div class="story-card-rubric">ИСТОРИЯ</div>
+            <h3 class="story-card-title">Она пробежала первую пятёрку в 48 лет. Потом ещё 300.</h3>
+            <div class="story-card-meta">15.06.26 · История</div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="#" class="story-card-link">
+            <div class="story-card-rubric">ТЕХНИКА</div>
+            <h3 class="story-card-title">Правило 80/20: почему большинство пробежек должны быть лёгкими</h3>
+            <div class="story-card-meta">14.06.26 · Тренировка</div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="#" class="story-card-link">
+            <div class="story-card-rubric">СНАРЯЖЕНИЕ</div>
+            <h3 class="story-card-title">Топ-5 кроссовок сезона: от лёгкого темпа до ультра</h3>
+            <div class="story-card-meta">13.06.26 · Обзор</div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="#" class="story-card-link">
+            <div class="story-card-rubric">МУЗЫКА</div>
+            <h3 class="story-card-title">BPM как метроном: как темп музыки меняет шаг</h3>
+            <div class="story-card-meta">12.06.26 · Музыка</div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="#" class="story-card-link">
+            <div class="story-card-rubric">КУЛЬТУРА</div>
+            <h3 class="story-card-title">Bandit Running и новая эстетика городского бега</h3>
+            <div class="story-card-meta">11.06.26 · Культура</div>
+          </a>
+        </article>
+
+        <!-- stories-grid-end -->
+      </div>
+    </div>
+
+    <div class="stories-load-more">
+      <button class="load-more-btn">Загрузить ещё</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="../logo-footer.svg" alt="Newman Run Odyssey" class="logo-svg-footer">
+      </div>
+      <div class="footer-copy">© 2026 Newman Run Odyssey. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>

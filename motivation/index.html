@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Мотивация — Newman Run Odyssey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&display=swap">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .motivation-page { padding: 120px clamp(1.5rem,5vw,4rem) 6rem; max-width: 900px; margin: 0 auto; }
+    .motivation-page .section-label { display: block; margin-bottom: 3rem; }
+    .quotes-list { display: flex; flex-direction: column; gap: 0; }
+    .quote-item { border-top: 1px solid rgba(255,255,255,0.08); padding: 2.5rem 0; display: grid; grid-template-columns: 3rem 1fr; gap: 2rem; align-items: start; }
+    .quote-num { font-family: var(--font-body); font-size: 0.65rem; letter-spacing: 0.1em; color: rgba(255,255,255,0.2); padding-top: 0.4rem; }
+    .quote-text { font-family: var(--font-display); font-size: clamp(1.1rem,2.2vw,1.5rem); font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 0.8rem; }
+    .quote-author { font-family: var(--font-body); font-size: 0.72rem; color: var(--color-accent); letter-spacing: 0.08em; }
+    .quote-item.hidden { display: none; }
+    .motivation-more-wrap { text-align: center; padding: 3rem 0 1rem; }
+    .motivation-btn { font-family: var(--font-body); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.8rem 2rem; border: 1px solid rgba(255,255,255,0.25); background: transparent; color: #fff; cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+    .motivation-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    .motivation-btn.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../logo-header.svg" alt="Newman Run Odyssey" class="logo-svg-header">
+      </a>
+      <nav class="site-nav">
+        <a href="../playlists/">PLAYLISTS</a>
+        <a href="../stories/">ИСТОРИИ</a>
+        <a href="../motivation/" class="active">МОТИВАЦИЯ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="motivation-page">
+    <span class="section-label" style="color:var(--color-accent)">МОТИВАЦИЯ</span>
+
+    <div class="quotes-list">
+
+      <div class="quote-item">
+        <span class="quote-num">01</span>
+        <div>
+          <div class="quote-text">«Только дисциплинированные в жизни свободны. Если вы недисциплинированны, вы — раб своего настроения и своих страстей.»</div>
+          <div class="quote-author">— Элиуд Кипчоге</div>
+        </div>
+      </div>
+
+      <div class="quote-item">
+        <span class="quote-num">02</span>
+        <div>
+          <div class="quote-text">«Некоторые думают, что марафон — это финиш. На самом деле марафон — это начало.»</div>
+          <div class="quote-author">— Элиуд Кипчоге</div>
+        </div>
+      </div>
+
+      <div class="quote-item">
+        <span class="quote-num">03</span>
+        <div>
+          <div class="quote-text">«Предположить — значит не знать. Я хочу знать.»</div>
+          <div class="quote-author">— Стив Префонтейн</div>
+        </div>
+      </div>
+
+      <div class="quote-item">
+        <span class="quote-num">04</span>
+        <div>
+          <div class="quote-text">«Чтобы победить гонку, нужно сначала победить себя.»</div>
+          <div class="quote-author">— Усэйн Болт</div>
+        </div>
+      </div>
+
+      <div class="quote-item">
+        <span class="quote-num">05</span>
+        <div>
+          <div class="quote-text">«Нет волшебной пилюли. Только тренировка, ещё раз тренировка и снова тренировка.»</div>
+          <div class="quote-author">— Хайле Гебреселассие</div>
+        </div>
+      </div>
+
+      <div class="quote-item hidden">
+        <span class="quote-num">06</span>
+        <div>
+          <div class="quote-text">«Бег — это не просто упражнение. Это образ жизни.»</div>
+          <div class="quote-author">— Джоан Бенойт</div>
+        </div>
+      </div>
+
+      <div class="quote-item hidden">
+        <span class="quote-num">07</span>
+        <div>
+          <div class="quote-text">«Разница между невозможным и возможным — в решимости человека.»</div>
+          <div class="quote-author">— Кипчоге Кейно</div>
+        </div>
+      </div>
+
+      <div class="quote-item hidden">
+        <span class="quote-num">08</span>
+        <div>
+          <div class="quote-text">«Бегай, когда можешь. Иди, если нужно. Ползи, если придётся. Но никогда не останавливайся.»</div>
+          <div class="quote-author">— Дин Карназес</div>
+        </div>
+      </div>
+
+      <div class="quote-item hidden">
+        <span class="quote-num">09</span>
+        <div>
+          <div class="quote-text">«Боль временна. Сдаться — навсегда.»</div>
+          <div class="quote-author">— Мо Фара</div>
+        </div>
+      </div>
+
+      <div class="quote-item hidden">
+        <span class="quote-num">10</span>
+        <div>
+          <div class="quote-text">«Каждое утро в Африке просыпается газель. Она знает, что должна бежать быстрее льва, иначе погибнет. Каждое утро просыпается лев. Он знает, что должен бежать быстрее газели, иначе умрёт с голоду. Неважно, кто ты — газель или лев. Когда встаёт солнце, нужно бежать.»</div>
+          <div class="quote-author">— Африканская пословица</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="motivation-more-wrap">
+      <button class="motivation-btn" id="showMoreBtn" onclick="showMore()">Больше мотивации →</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="../logo-footer.svg" alt="Newman Run Odyssey" class="logo-svg-footer">
+      </div>
+      <div class="footer-copy">© 2026 Newman Run Odyssey. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    function showMore() {
+      document.querySelectorAll('.quote-item.hidden').forEach(el => el.classList.remove('hidden'));
+      document.getElementById('showMoreBtn').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>

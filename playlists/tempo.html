@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tempo — Newman Run Odyssey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&display=swap">
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .pl-page { padding-top: 120px; padding-bottom: var(--sp-16); min-height: 100vh; }
+    .pl-inner { max-width: var(--content); margin: 0 auto; padding: 0 var(--gutter); }
+    .pl-back { display: inline-flex; align-items: center; gap: 0.5em; font-family: var(--font-body); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-muted); text-decoration: none; margin-bottom: var(--sp-10); transition: color var(--tr); }
+    .pl-back:hover { color: var(--color-accent); }
+    .pl-header { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-10); align-items: end; margin-bottom: var(--sp-10); padding-bottom: var(--sp-8); border-bottom: 1px solid var(--color-border); }
+    .pl-title { font-family: var(--font-display); font-size: clamp(4rem, 9vw, 9rem); font-weight: 900; letter-spacing: -0.04em; line-height: 0.88; text-transform: uppercase; color: var(--color-accent); }
+    .pl-meta { display: flex; flex-direction: column; gap: var(--sp-4); padding-bottom: 0.4rem; }
+    .pl-bpm { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 900; letter-spacing: -0.02em; color: var(--color-accent); }
+    .pl-genres { font-family: var(--font-body); font-size: 0.8rem; font-weight: 500; color: var(--color-muted); letter-spacing: 0.04em; line-height: 1.6; }
+    .pl-desc { font-family: var(--font-body); font-size: 0.85rem; color: var(--color-muted); line-height: 1.7; max-width: 38ch; }
+    .pl-embed { margin-top: var(--sp-12); }
+    .pl-embed-label { font-family: var(--font-body); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-muted); margin-bottom: var(--sp-4); }
+    .pl-embed-wrap { position: relative; }
+    .pl-embed-wrap::before, .pl-embed-wrap::after { content: ''; position: absolute; left: 0; right: 0; height: 80px; z-index: 2; pointer-events: none; }
+    .pl-embed-wrap::before { top: 0; background: linear-gradient(to bottom, #0a0a0a 0%, transparent 100%); }
+    .pl-embed-wrap::after { bottom: 0; background: linear-gradient(to top, #0a0a0a 0%, transparent 100%); }
+    .pl-embed-wrap iframe { width: 100%; border: none; display: block; }
+    @media (max-width: 768px) { .pl-header { grid-template-columns: 1fr; gap: var(--sp-6); } }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="Newman Run Odyssey">
+        <img src="../logo-header.svg" alt="Newman Run Odyssey" class="logo-svg-header" />
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">PLAYLISTS</a>
+        <a href="../index.html#articles">STORIES</a>
+        <a href="../index.html#motivation">MOTIVATION</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pl-page">
+    <div class="pl-inner">
+      <a href="index.html" class="pl-back">← Все плейлисты</a>
+      <div class="pl-header">
+        <div>
+          <h1 class="pl-title">TEMPO</h1>
+        </div>
+        <div class="pl-meta">
+          <div class="pl-bpm">120–140 BPM</div>
+          <div class="pl-genres">House<br/>Tech House<br/>Techno<br/>Minimal Techno<br/>Melodic Techno<br/>Progressive House<br/>Psy Trance & etc.</div>
+          <p class="pl-desc">Устойчивый высокий темп. Плейлист для темпового бега — держит ритм и не отпускает.</p>
+        </div>
+      </div>
+      <div class="pl-embed">
+        <p class="pl-embed-label">Слушать в Spotify</p>
+        <div class="pl-embed-wrap">
+          <!-- Замени src на свою ссылку для TEMPO -->
+          <iframe
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6J5NfMJS675?utm_source=generator&theme=0"
+            width="100%" height="700" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="../logo-footer.svg" alt="Newman Run Odyssey" class="logo-svg-footer" />
+      </div>
+      <div class="footer-copy">© 2026 Newman Run Odyssey. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const hdr = document.getElementById('site-header');
+    window.addEventListener('scroll', () => { hdr.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
+  </script>
+</body>
+</html>
